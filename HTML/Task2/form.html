@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>form</title>
+    </head>
+
+    <body>
+        <h1> Register </h1>
+        <p>Create your form. It's free and only takes a minute.</p>
+        <form action="">
+            <input type="text" name="fname" placeholder="First name"/>
+            <input type="text" name="lname" placeholder="last name"/> <br><br>
+
+            <input type="email" name="email" placeholder="@gmail.com"/> <br><br>
+
+            <input type="password" name="pass" placeholder="Password" /> <br><br>
+
+            <input type="password" name="conpass" placeholder="Confirm Password" /> <br>
+    
+            <p> <b>Gender:</b> </p>
+            <input type="radio" id="male" name="gender"/>
+            <label for="male">Male</label> 
+            <input type="radio" id="female"name="gender"/>
+            <label for="female">Female</label> <br><br>
+
+            <label for="country"><b>Country:</b></label>
+            <select name="country" id="country">
+                <option value="eg">Egypt</option>
+                <option value="SA"> Saudi Arabia </option>
+                <option value="DE">Germany</option>
+                <option value="JP">Japan</option>
+                <option value="AE">United Arab Emirates</option>
+            </select>
+
+            <p><b>Please select your interests:</b></p>
+            <input type="checkbox" name="AI" id="AI" />
+            <label for="AI">AI</label>
+            <br>
+            <input type="checkbox" name="pro" id="pro" />
+            <label for="pro">Programming</label>
+            <br>
+            <input type="checkbox" name="UX" id="UX" />
+            <label for="UX">UX</label>
+            <br>
+            <input type="checkbox" name="sec" id="sec" />
+            <label for="sec">security</label> <br> <br>
+
+            <label for="CV"><b>Drop Your CV File: </b></label>
+            <input type="file" id="CV" name="CV" required> <br> <br>
+
+            <p><b>What do you want to tell us about you?</b></p>
+            <textarea 
+             rows="5"
+             col="20"
+            ></textarea>
+
+            <br>
+            <br>
+            <lable for="AD"><b>When will you attend?</b></lable>
+            <input type="date" id="AD" name="Attendance date" min="2025-01-01" max="2025-12-31"/>
+            <br>
+            <br>
+            <input type="button" value="Submit">
+
+        </form>
+    </body>
+</html>
