@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+#aside {
+    background-color: #183666;
+    width: 280px;
+    color : whitesmoke;
+    position:fixed;
+    top:0; left:0;
+    height : 100vh;
+}
+
+.top-aside {
+    padding : 24px ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.799) ;
+    display : flex ;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textlogo {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+body {
+    background-color: rgba(214, 221, 223, 0.553);
+}
+.links {
+    display:flex;
+    flex-direction: column;
+}
+
+.button {
+    list-style: none;
+    padding: 24px 0 0 24px;
+}
+
+.link-items {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.anchors {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 12px;
+}
+
+.anchors:hover{
+    background: rgba(255,255,255.0.05) ;
+    color: white;
+}
+
+.link-items.active{
+    background: rgba(59,130,246,0.1);
+    color: #3b82f6;
+    border-right: 3px #3b82f6 solid ;
+}
+
+#main {
+    flex:1;
+    margin-left: 280px;;
+}
+
+#first-row {
+    display : flex ;
+    margin : 25px;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.page-title {
+    font-size:x-large;
+    font-weight: bolder;
+}
+.page-subtitle , .comment , .time{
+    font-size: medium;
+    color: #777c84;
+    padding : 10px;
+}
+
+.first-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.second-box {
+    display: flex;
+    gap: 15px;
+}
+
+.second-box input {
+    border-radius: 10px;
+    padding:10px;
+    background-color: rgba(214, 221, 223, 0.553);
+    border: 1px solid  rgba(214, 221, 223, 0.553);
+    height:30px;
+}
+
+.second-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;;
+}
+
+#cards , #last-row  {
+    display : flex ;
+    margin : 25px;
+    justify-content: stretch;
+    border-radius: 15px;
+    gap: 60px;
+}
+ .card {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+ }
+
+.cardicon {
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.bg-green {
+  background-color: green;
+}
+.bg-blue {
+  background-color: #3498db;
+}
+.bg-orange {
+  background-color: #f39c12;
+}
+.bg-purple {
+  background-color: #9b59b6;
+}
+
+.num {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.percent {
+    color:green;
+    font-size: small;
+    padding: 10px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: 
+    center;
+    justify-content: left;
+}
+
+.left-box , .right-box {
+    display: flex;
+    flex-direction: column;
+    padding: 25px; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width:50%;
+}
+
+.sub {
+    color : blue;
+    font-size: small;
+}
+
+.first , .second , .third , .fourth , .fifth {
+    display:flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap : 15px;
+    border-bottom: 2px solid rgba(214, 221, 223, 0.553);
+}
+
+.fifth  {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.first {
+    padding-bottom: 25px ;
+
+    justify-content: space-between;
+}
+
+.words {
+    display : flex ;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.bar {
+    background-color: #eee;        
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+    width:30%;
+}
+
+.bar-fill {
+    background-color: #4853ab;                      
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(214, 221, 223, 0.553);
+}
