@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <main>
+            <div class="text">
+                <h1> Register </h1>
+                <p class="sub">Create your form. It's free and only takes a minute.</p>
+            </div>
+            <form action="">
+                <section class="personal">
+                    <p class="title">Personal Information</p>
+
+                    <div class="row">
+                        <div class="double-lab-row">
+                            <label for="fl">
+                                Full Name
+                                <span class="char">*</span>
+                            </label>
+                            <input type="text" name="fl" placeholder="Enter your full name" required>
+                        </div> 
+
+                        <div class="double-lab-row">
+                            <label for="fl">
+                                Email Address
+                                <span class="char">*</span>
+                            </label>
+                            <input type="text" name="fl" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="personal-lab lab">
+                        <label for="pn" >
+                            Phone Number
+                            <span class="char">*</span>
+                        </label>
+                        <input type="text" name="pn" placeholder="+1 (555) 123-456" required>
+                    </div>
+                </section>
+
+                <section class="Security">
+                    <p class="title">Security Information</p>
+                    <div class="row">
+                        <div class="double-lab-row">
+                            <label for="Pass" class="sec-title">
+                                Password
+                                <span class="char">*</span> 
+                            </label>
+                            <input type="password" name="Pass" placeholder="Create a strong password">
+                        </div>
+
+                        <div class="double-lab-row">
+                            <label for="cf" class="sec-title">
+                            confirm Password
+                            <span class="char">*</span> 
+                            </label>
+                            <input type="password" name="cf" placeholder="Re-enter your password">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Demographics">
+                    <p class="title"> Demographics & Preferences </p>
+                    <div class="gender">
+                        <label for="gender" class="sec-title">
+                            Gender
+                            <span class="char">*</span> 
+                        </label>
+
+                        <div class="btns">
+                            <div class="btn">
+                                <input type="radio" id="male" name="gender"/>
+                                <label for="male">Male</label>
+                            </div>
+                    
+                            <div class="btn">
+                                <input type="radio" id="female "name="gender"/>
+                                <label for="female" >Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lab" >
+                        <label for="country" class="sec-title" >
+                            Nationality
+                            <span class="char">*</span>
+                        </label> <br>
+                        <select name="country" id="country" class="country-lab" required>
+                            <option value="" disabled selected >Select Your Nationality</option>
+                            <option value="eg">Egypt</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="DE">Germany</option>
+                            <option value="JP">Japan</option>
+                            <option value="AE">United Arab Emirates</option>
+                        </select>
+                    </div>
+                    
+                    <div class="interests">
+                        <p class="sec-title" >
+                            Areas of Interest
+                            <span class="char">*</span>
+                        </p>
+                        
+                        <div class="btns">
+                            <button class="btn">
+                                <input type="checkbox" name="pro" id="pro" />
+                                <label for="pro">Programming & developments</label>
+                            </button>
+                        
+                            <button class="btn">
+                                <input type="checkbox" name="AI" id="AI" />
+                                <label for="AI">Artificial Intelligence</label>
+                            </button>
+                        </div>
+                        
+                        <div class="btns">
+                            <button class="btn">
+                                <input type="checkbox" name="UX" id="UX" />
+                                <label for="UX">User Experience Design</label>
+                            </button>
+                        
+                            <button class="btn">
+                                <input type="checkbox" name="sec" id="sec" />
+                                <label for="sec">cybersecurity</label> 
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                 <section class="Additional">
+                    <p class="title">Additional Information</p>
+                    <div class="cv">
+                        <label for="CV">
+                            Resume/CV (PDF, DOC):
+                            <span class="char">*</span>
+                        </label> <br>
+                        <input type="file" id="CV" name="CV" required>
+                    </div>
+
+                    <div class="about">
+                        <p class="sec-title" >About Yourself
+                            <span class="char">*</span>
+                        </p>
+                        <textarea placeholder="Tell us about your background, experience, and what motivates you.."
+                        rows="5"
+                        col="20"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="lab">
+                        <label for="AD" class="sec-title">
+                            Preferred Start Date
+                            <span class="char">*</span>
+                        </label><br>
+                        <input type="date" id="AD" name="Attendance date"
+                        min="2025-01-01" max="2025-12-31"/>
+                    </div>
+                </section>
+
+                <button class="sub-btn">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
