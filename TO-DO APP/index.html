@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>T0-DO APP</title>
+  </head>
+  <body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                What's up,
+                <input type="text" id="name" placeholder="name here" />
+            </h2>
+
+            <div class="search-part">
+                <input type="text" id="search-label" placeholder="Task Name.." />
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+        </section>
+
+        <section class="create-todo">
+            <h3>create a todo</h3>
+            <form id="new-todo">
+                <h4>What's on your todo?</h4>
+                <div class="todotext">
+                    <input
+                        type="text"
+                        id="todoTitle"
+                        placeholder="e.g. study lesson"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="todoDescription"
+                        placeholder="Task description"
+                        required
+                    />
+                </div>
+                <label for="imageInput" id="image-label">
+                    Drop a Photo
+                    <input
+                    type="file"
+                    name="userImage"
+                    id="imageInput"
+                    accept="image/*"
+                    />
+                </label>
+                <h4>To-Do Priority</h4>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="priority" id="priority1" value="low" />
+                        <span class="bubble low"></span>
+                        <div>Low</div>
+                    </label>
+                    <label>
+                        <input
+                        type="radio"
+                        name="priority"
+                        id="priority2"
+                        value="medium"
+                        />
+                        <span class="bubble medium"></span>
+                        <div>Medium</div>
+                    </label>
+                    <label>
+                        <input type="radio" name="priority" id="priority3" value="hard" />
+                        <span class="bubble hard"></span>
+                        <div>Hard</div>
+                    </label>
+                </div>
+                    <input type="submit" value="Add todo" />
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>todo lists</h3>
+            <div class="TO-Do">
+                <h4>TO Do</h4>
+                <div class="todoItem">
+                    <!-- <div class="addone">
+                        <div class="todo-task">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="bubble low"></span>
+                            </label>
+                            <i class="fa-solid fa-comment"></i>
+                            <div class="todo-content">
+                                <p>drink water</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <img src="images.png" alt="img" />
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="In-Progress">
+                <h4>In progress</h4>
+                <div class="todoItem">
+                    <!-- <div class="addone">
+                        <div class="todo-task">
+                            <label>
+                                <input type="checkbox" />
+                                <span class="bubble low"></span>
+                            </label>
+                            <div class="todo-content">
+                                <p class="title-content">drink water</p>
+                                <p class="description-content"> description </p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <img src="images.png" alt="img" />
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+            </div>
+            </div>
+            <div class="Done">
+                <h4>Done</h4>
+                <div class="todoItem">
+
+            
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
